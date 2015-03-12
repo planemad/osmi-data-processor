@@ -3,7 +3,7 @@ Scripts to process Openstreetmap inspector data from geofabrik.de
 ## Dependencies
 - [curl](http://curl.haxx.se/download.html)
 - [ogr2ogr](http://trac.osgeo.org/gdal/wiki/DownloadingGdalBinaries)
-- Python packages ```pip install fiona shapely```
+- Python packages ```pip install gdal```
 
 ## Installation
 - git clone
