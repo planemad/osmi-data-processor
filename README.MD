@@ -7,7 +7,6 @@ Scripts to process Openstreetmap inspector data from geofabrik.de
 
 ## Installation
 - git clone
-- ```./download_data.sh``` Download base data for spatial processing 
 
 ## Run
 ### Unconnected Major Roads
