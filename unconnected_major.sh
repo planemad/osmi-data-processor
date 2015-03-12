@@ -16,16 +16,16 @@ echo 1m error
 ## Merging data ##
 echo Merging data files
 
-file=merge.gml
+file=unconnected_major.shp
 
 for i in $(ls unconnected_major*.gml)
 do
       if [ -f $file ]
       then
-           echo merging $i  
+           echo merging $file and $i 
            ogr2ogr -f "GML" -update -append $file $i -nln merge
       else
-           echo creating merge.gml
-           ogr2ogr -f "GML" $file $i
+           echo creating $file
+           ogr2ogr $file $i
 fi
 done
