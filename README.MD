@@ -1,5 +1,9 @@
 Scripts to process Openstreetmap inspector data from geofabrik.de
 
+## Dependencies
+- [curl](http://curl.haxx.se/download.html)
+- [ogr2ogr](http://trac.osgeo.org/gdal/wiki/DownloadingGdalBinaries)
+
 ## Installation
 - git clone
 - Download base data for spatial processing ```./download_data.sh```
