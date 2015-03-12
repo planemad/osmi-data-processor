@@ -1,7 +1,9 @@
 #!/bin/sh
 
-## Run data downloader ##
-./download_data.sh
+## Download data on first run ##
+if [ ! -d "data" ]; then
+  ./download_data.sh
+fi
 
 ## Move to data dir ##
 cd data
