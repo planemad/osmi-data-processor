@@ -1,14 +1,14 @@
 #!/bin/sh
 
-## Download data on first run ##
+## Download data on first run
 if [ ! -d "data" ]; then
   ./download_data.sh
 fi
 
-## Move to data dir ##
+## Move to data dir
 cd data
 
-## Download data ##
+## Download data
 echo Downloading unconnected major data
 echo 5m errors
 curl -S --progress-bar "http://tools.geofabrik.de/osmi/view/routing/wxs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&TYPENAME=unconnected_major5" > unconnected_major5.gml
@@ -17,7 +17,7 @@ curl -S --progress-bar "http://tools.geofabrik.de/osmi/view/routing/wxs?SERVICE=
 echo 1m errors
 curl -S --progress-bar "http://tools.geofabrik.de/osmi/view/routing/wxs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&TYPENAME=unconnected_major1" > unconnected_major1.gml
 
-# Merging data ##
+## Merging data
 echo Merging data files
 
 output=unconnected_major.shp
