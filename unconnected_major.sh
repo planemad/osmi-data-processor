@@ -8,6 +8,10 @@ fi
 ## Move to data dir
 cd data
 
+# Clear old files
+rm unconnected_major*
+rm output*
+
 ## Download data
 echo Downloading unconnected major data
 echo 5m errors
