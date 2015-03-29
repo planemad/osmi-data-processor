@@ -6,7 +6,9 @@ Scripts to process Openstreetmap inspector data from geofabrik.de
 - ```pip install gdal``` Python packages 
 
 ## Installation
-- git clone
+- `git clone https://github.com/planemad/osmi-data-processor.git `
+- `cd osmi-data-processor`
+- for ubuntu: `sh install.sh`
 
 ## Run
 ### Unconnected Major Roads
