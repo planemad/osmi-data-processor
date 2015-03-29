@@ -39,7 +39,7 @@ fi
 done
 
 ## Intersect errors with countries
-echo Interscting errors with country shapes
+echo Intersecting errors with country shapes
 cd ..
 python unconnected_intersect.py
 
@@ -48,4 +48,3 @@ mkdir output
 echo Converting SHP to CSV
 rm output/unconnected_major.csv
 ogr2ogr -F "CSV" output/unconnected_major.csv data/output.shp -lco GEOMETRY=AS_XY
-
